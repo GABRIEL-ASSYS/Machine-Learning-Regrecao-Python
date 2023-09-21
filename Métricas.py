@@ -8,7 +8,10 @@ from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error, m
 import matplotlib.pyplot as plt
 
 data = pd.read_excel('expectativaVida.xlsx')
+data = data.dropna()
+
 print(data.head())
+print(data.info())
 
 X = data.drop('Life expectancy males', axis=1)
 y = data['Life expectancy males']
@@ -24,6 +27,8 @@ modelos = {
 }
 
 metricas = []
+
+plt.figure(figsize=(12, 8))
 
 for nome, modelo in modelos.items():
     modelo.fit(X_train, y_train)
@@ -55,7 +60,7 @@ for nome, modelo in modelos.items():
         'MAPE Teste': mape_teste
     })
 
-    plt.figure(figsize=(12, 8))
+    plt.subplot(2, 3, len(metricas))
     plt.plot(y_train, label='Real - Treino', marker='o')
     plt.plot(y_pred_treino, label='Predito - Treino', marker='x')
     plt.plot(y_test, label='Real - Teste', marker='o')
@@ -64,8 +69,9 @@ for nome, modelo in modelos.items():
     plt.ylabel('Valores')
     plt.title(f'Comparação entre Valores Reais e Preditos por {nome}')
     plt.legend()
-    plt.tight_layout()
-    plt.show()
+
+plt.tight_layout()
+plt.show()
 
 metricas_df = pd.DataFrame(metricas)
 print(metricas_df)
