@@ -1,4 +1,4 @@
-# Machine Learning Regrecao
+# Machine Learning Regrecão
 
   Este é um projeto criado para aplicar os conhecimentos de Regreção em Machine Learning utilizando Python.
 
