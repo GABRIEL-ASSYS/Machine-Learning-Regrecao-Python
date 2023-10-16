@@ -24,9 +24,8 @@ De que coisas você precisa para instalar o software e como instalá-lo?
 * Quando você receber a notificação perguntando se você deseja abrir o repositório clonado, selecione <b>Abrir</b>.
 * Para rodar o projeto é necessário abrir o terminal de comando no Visual Studio, caso ainda não tenha usado o Node.js executar o comando ```npm install```,  depois de instalado executar ```npm start```, e ele abrirá uma aba em seu navegador padrão.
 
-## 🛠️ Construído com  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" width="40" height="40"/><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" width="40" height="40"/>
-* [Dart](https://dart.dev/guides) - Linguagem utilizada
-* [Flutter](https://docs.flutter.dev) - Framework
+## 🛠️ Construído com  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="40" height="40"/>
+* [Python](https://www.python.org/doc/) - Linguagem utilizada
 
 ## ✒️ Autores
 
